@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.CheckoutActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        >
+
+        <TextView
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:fontFamily="@font/hemihead"
+            android:layout_width="300dp"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:text="Place Your Order"
+            android:textColor="@color/black"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="79dp"
+        android:gravity="center"
+        android:fontFamily="@font/hemihead"
+        android:text="MY Order"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/allorderitems"
+        android:layout_marginTop="130dp"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"/>
+
+    <TextView
+        android:layout_below="@+id/phNumber"
+        android:layout_width="match_parent"
+        android:textColor="@color/black"
+        android:layout_height="wrap_content"
+        android:text="Address:"/>
+
+    <EditText
+        android:id="@+id/fullAddress"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_below="@+id/phNumber"
+        android:hint="Full Address" />
+    <TextView
+        android:layout_below="@+id/allorderitems"
+        android:layout_width="match_parent"
+        android:textColor="@color/black"
+        android:layout_height="wrap_content"
+        android:text="Name:"/>
+
+    <EditText
+        android:id="@+id/fullName"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@+id/allorderitems"
+        />
+    <TextView
+        android:layout_below="@+id/fullName"
+        android:layout_width="match_parent"
+        android:textColor="@color/black"
+        android:layout_height="wrap_content"
+        android:text="Phone Number:"/>
+
+    <EditText
+        android:id="@+id/phNumber"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@+id/fullName"
+        android:inputType="phone" />
+
+
+    <TextView
+        android:id="@+id/TVcartotal"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="34dp"
+        android:layout_marginBottom="80dp"
+        android:text="Cart Total:"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/cart_total"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="111dp"
+        android:layout_marginBottom="80dp"
+        android:layout_toEndOf="@+id/TVcartotal"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/proceed_to_payment"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginEnd="0dp"
+        android:text="Proceed To Payment" />
+
+</RelativeLayout>

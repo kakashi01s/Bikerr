@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.PostActivities.CreatepostActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/back_button_feed"
+                android:layout_width="30dp"
+                android:layout_height="40dp"
+                android:backgroundTint="@color/black"
+                app:srcCompat="@drawable/ic_baseline_arrow_back_24" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:text="CreatePost"
+                android:fontFamily="@font/hemihead"
+                android:textColor="@color/black"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/post_caption"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_marginTop="40dp"
+
+            android:hint="Write something about Your Post!" />
+        android:layout_alignParentTop="true"
+
+        <LinearLayout
+            android:id="@+id/llpostitem"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_below="@+id/post_caption"
+
+            >
+
+            <ImageButton
+                android:id="@+id/Post_Item"
+                android:layout_width="match_parent"
+                android:layout_height="280dp"
+                android:src="@drawable/ic_baseline_add_24" />
+
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/createPostButton"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:text="Create Post" />
+
+    </RelativeLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

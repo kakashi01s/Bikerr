@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="app/src/main/res/drawable-v24/ic_baseline_email_24.xml" value="0.2557291666666667" />
+        <entry key="app/src/main/res/drawable-v24/ic_baseline_local_phone_24.xml" value="0.2557291666666667" />
+        <entry key="app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.1375" />
+        <entry key="app/src/main/res/font/pacifico.xml" value="0.22685185185185186" />
+        <entry key="app/src/main/res/layout-v23/card_feed.xml" value="0.14990942028985507" />
+        <entry key="app/src/main/res/layout/activity_about.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/activity_cart.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_checkout.xml" value="0.375" />
+        <entry key="app/src/main/res/layout/activity_community.xml" value="0.13360507246376813" />
+        <entry key="app/src/main/res/layout/activity_createpost.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/activity_item.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/activity_mychats.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_mymessaging.xml" value="0.13360507246376813" />
+        <entry key="app/src/main/res/layout/activity_onboarding.xml" value="0.17481884057971014" />
+        <entry key="app/src/main/res/layout/activity_order_placed.xml" value="0.17844202898550723" />
+        <entry key="app/src/main/res/layout/activity_register.xml" value="0.335" />
+        <entry key="app/src/main/res/layout/activity_shop.xml" value="0.11727456940222898" />
+        <entry key="app/src/main/res/layout/activity_sign_in.xml" value="0.165" />
+        <entry key="app/src/main/res/layout/activity_splash.xml" value="0.13903985507246377" />
+        <entry key="app/src/main/res/layout/card_cart.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/card_feed.xml" value="0.335" />
+        <entry key="app/src/main/res/layout/card_nearby.xml" value="0.11727456940222898" />
+        <entry key="app/src/main/res/layout/card_order.xml" value="0.165" />
+        <entry key="app/src/main/res/layout/card_shop.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/dialogorderplaced.xml" value="0.1598731884057971" />
+        <entry key="app/src/main/res/layout/fragment_channels.xml" value="0.23958333333333334" />
+        <entry key="app/src/main/res/layout/fragment_chat.xml" value="0.335" />
+        <entry key="app/src/main/res/layout/fragment_feed.xml" value="0.14990942028985507" />
+        <entry key="app/src/main/res/layout/fragment_maps.xml" value="0.11727456940222898" />
+        <entry key="app/src/main/res/layout/fragment_nearby.xml" value="0.335" />
+        <entry key="app/src/main/res/layout/fragment_profile.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/fragment_shop.xml" value="0.5" />
+        <entry key="app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.1375" />
+        <entry key="app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.1375" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

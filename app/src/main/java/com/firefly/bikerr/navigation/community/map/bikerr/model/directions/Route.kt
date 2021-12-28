@@ -1,0 +1,21 @@
+package com.firefly.bikerr.navigation.community.map.bikerr.model.directions
+
+import com.firefly.bikerr.navigation.community.map.bikerr.directions.Bounds
+import com.google.gson.annotations.SerializedName
+
+data class Route(
+        @SerializedName("bounds")
+        var bounds: Bounds?,
+        @SerializedName("copyrights")
+        var copyrights: String?,
+        @SerializedName("legs")
+        var legs: List<Leg?>?,
+        @SerializedName("overview_polyline")
+        var overviewPolyline: OverviewPolyline?,
+        @SerializedName("summary")
+        var summary: String?,
+        @SerializedName("warnings")
+        var warnings: List<Any?>?,
+        @SerializedName("waypoint_order")
+        var waypointOrder: List<Any?>?
+)

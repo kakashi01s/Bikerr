@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.ItemActivity">
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <RelativeLayout
+            android:id="@+id/itembar"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+            <TextView
+                android:gravity="center"
+                android:id="@+id/ShopItem_title"
+                android:layout_width="wrap_content"
+                android:textColor="@color/black"
+                android:fontFamily="@font/hemihead"
+                android:textSize="20sp"
+                android:text="SHOP"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_height="match_parent"/>
+
+
+            <ImageView
+                android:id="@+id/open_cart2"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="8dp"
+                android:src="@drawable/cart_logo" />
+
+        </RelativeLayout>
+
+        <com.google.android.gms.ads.AdView xmlns:ads="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/itemBanneradView1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/itembar"
+            ads:adSize="BANNER"
+            ads:adUnitId="ca-app-pub-5409396306285350/2542137040" />
+
+        <com.github.chrisbanes.photoview.PhotoView
+            android:id="@+id/ItemImg"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_below="@+id/itemBanneradView1" />
+
+        <TextView
+            android:id="@+id/Itemtitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ItemImg"
+            android:padding="6dp"
+            android:gravity="center"
+            android:textStyle="bold" />
+
+        <RelativeLayout
+            android:id="@+id/specsbar"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_below="@id/Itemtitle"
+            android:layout_height="40dp"
+            android:padding="6dp">
+
+            <TextView
+                android:id="@+id/itemQuantity"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="40dp"
+
+                android:gravity="center"
+                android:text="Quantity:"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+
+            <Spinner
+                android:id="@+id/itemQuantityspinner"
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                android:layout_toEndOf="@+id/itemQuantity"
+                android:background="@color/light_gray"
+                android:gravity="center"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_toLeftOf="@+id/itemsizeSpinner"
+                android:gravity="center"
+                android:text="Size:"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+
+            <Spinner
+                android:id="@+id/itemsizeSpinner"
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentEnd="true"
+                android:gravity="center"
+                android:layout_marginEnd="40dp"
+                android:textStyle="bold"
+                android:background="@color/light_gray"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/pricebar"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_below="@id/specsbar"
+            android:layout_height="50dp"
+            android:padding="6dp"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/itemPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="₹  :  "
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/ItemPriceET"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:layout_toEndOf="@+id/itemPrice"
+                android:background="@color/white" />
+
+        </RelativeLayout>
+
+        <com.google.android.gms.ads.AdView xmlns:ads="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/itemBanneradView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/pricebar"
+            ads:adSize="BANNER"
+            ads:adUnitId="ca-app-pub-5409396306285350/8807968973" />
+        <Button
+            android:id="@+id/button_addtocart"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Add To Cart"
+            android:layout_below="@+id/itemBanneradView2"
+            />
+
+
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

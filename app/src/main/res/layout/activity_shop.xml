@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.ShopActivity"
+    android:orientation="vertical"
+    >
+    <RelativeLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <TextView
+            android:gravity="center"
+            android:id="@+id/shop_title"
+            android:layout_width="wrap_content"
+            android:textColor="@color/black"
+            android:fontFamily="@font/hemihead"
+            android:textSize="20sp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_height="match_parent"/>
+
+
+        <ImageView
+            android:id="@+id/open_cart1"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="8dp"
+            android:src="@drawable/cart_logo" />
+
+    </RelativeLayout>
+    <com.google.android.gms.ads.AdView
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/shopBanneradView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        ads:adSize="BANNER"
+        ads:adUnitId="ca-app-pub-5409396306285350/4940876155">
+
+
+    </com.google.android.gms.ads.AdView>
+    <androidx.recyclerview.widget.RecyclerView
+
+        android:id="@+id/rvshop"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp"
+        android:layout_margin="10dp"/>
+
+</LinearLayout>
