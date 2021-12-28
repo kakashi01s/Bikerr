@@ -9,6 +9,7 @@ import android.os.Bundle
 import android.util.Log
 import android.view.View
 import android.widget.*
+import androidx.constraintlayout.widget.ConstraintLayout
 import com.firefly.bikerr.navigation.community.map.bikerr.R
 import com.firefly.bikerr.navigation.community.map.bikerr.model.Posts
 import com.firefly.bikerr.navigation.community.map.bikerr.ui.MainActivity
@@ -56,6 +57,8 @@ class CreatepostActivity : AppCompatActivity() {
         super.onActivityResult(requestCode, resultCode, data)
         if (resultCode == Activity.RESULT_OK && requestCode == IMAGE_PICK_CODE) {
             // I'M GETTING THE URI OF THE IMAGE AS DATA AND SETTING IT TO THE IMAGEVIEW
+            postimg!!.layoutParams.height = ConstraintLayout.LayoutParams.WRAP_CONTENT
+            postimg!!.layoutParams.width = ConstraintLayout.LayoutParams.WRAP_CONTENT
             postimg!!.setImageURI(data?.data)
             filePath = data?.data
             createPost_button!!.setOnClickListener {

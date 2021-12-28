@@ -12,7 +12,7 @@
         <entry key="app/src/main/res/layout/activity_cart.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_checkout.xml" value="0.375" />
         <entry key="app/src/main/res/layout/activity_community.xml" value="0.13360507246376813" />
-        <entry key="app/src/main/res/layout/activity_createpost.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/activity_createpost.xml" value="0.5" />
         <entry key="app/src/main/res/layout/activity_item.xml" value="0.25" />
         <entry key="app/src/main/res/layout/activity_mychats.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_mymessaging.xml" value="0.13360507246376813" />
@@ -24,7 +24,7 @@
         <entry key="app/src/main/res/layout/activity_splash.xml" value="0.13903985507246377" />
         <entry key="app/src/main/res/layout/card_cart.xml" value="0.25" />
         <entry key="app/src/main/res/layout/card_feed.xml" value="0.335" />
-        <entry key="app/src/main/res/layout/card_nearby.xml" value="0.11727456940222898" />
+        <entry key="app/src/main/res/layout/card_nearby.xml" value="0.5" />
         <entry key="app/src/main/res/layout/card_order.xml" value="0.165" />
         <entry key="app/src/main/res/layout/card_shop.xml" value="0.25" />
         <entry key="app/src/main/res/layout/dialogorderplaced.xml" value="0.1598731884057971" />
@@ -34,7 +34,7 @@
         <entry key="app/src/main/res/layout/fragment_maps.xml" value="0.11727456940222898" />
         <entry key="app/src/main/res/layout/fragment_nearby.xml" value="0.335" />
         <entry key="app/src/main/res/layout/fragment_profile.xml" value="0.25" />
-        <entry key="app/src/main/res/layout/fragment_shop.xml" value="0.5" />
+        <entry key="app/src/main/res/layout/fragment_shop.xml" value="0.25" />
         <entry key="app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.1375" />
         <entry key="app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.1375" />
       </map>
